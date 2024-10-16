@@ -1,0 +1,28 @@
+#navbarNav {
+    justify-content: center;
+    padding-left: 28rem;
+    padding-bottom: 5rem;
+    
+}
+
+.nav-link {
+    font-family: "Dancing Script", cursive;
+}
+
+#homeSentence {
+    padding-left: 30rem;
+    margin-bottom: 16rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 45px;
+}
+
+.yoga-text {
+    padding-left: 5rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 2rem 0 ;
+}
+
