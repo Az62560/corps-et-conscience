@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Corps et conscience par Marjorie Denis{% endblock %}</title>
+    <title>{% block title %}Corps et conscience by Marjorie Denis{% endblock %}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="asset/img/yin-yang.png">
     <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('build/vendor.css') }}">
@@ -35,16 +35,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link fs-3" href="#whoAmI"><strong>Qui suis-je</strong></a>
+                    <a class="nav-link fs-3" href="{{ path('app_home') }}"><strong>Accueil</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-3" href="#practiceWithMe"><strong>Séances</strong></a>
+                    <a class="nav-link fs-3" href="{{ path('app_my_practices') }}"><strong>Mes pratiques</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-3" href="#testimonials"><strong>Témoignages</strong></a>
+                    <a class="nav-link fs-3" href="{{ path('app_who_am_i') }}"><strong>Qui suis-je ?</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fs-3" href="#contact"><strong>Contact</strong></a>
+                    <a class="nav-link fs-3" href="{{ path('app_testimonials') }}" alt="lien vers les témoignages"><strong>Témoignages</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3" href=""><strong>Contact</strong></a>
                 </li>
             </ul>
         </div>
