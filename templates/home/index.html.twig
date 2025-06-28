@@ -3,7 +3,7 @@
 {% block title %}Accueil{% endblock %}
 
 {% block main %}
-<section class="p-5">
+<section class="p-5 pt-0">
   <div class="container home-center-container">
       <h2 class="homeSentence">"S'accorder du temps pour<br>
       mieux vivre avec soi même<br>
@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<section class="homeCardCitation">
+<section class="homeCardCitation rounded-4 mx-5 my-4">
   <div class="homeImg">
     <img src="asset/img/tournesols_pied_h.jpg" alt="" class="img-cover">
   </div>
@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<section class="homeCardCitation">
+<section class="homeCardCitation rounded-4 mx-5 my-4">
   <div>
     <h2 class="homeCardSentence ps-5">Pleine conscience<br><br>
     "Une prise de conscience est comme un soleil, lorsqu'il brille sur les choses, elles sont transformées."<br><br>
@@ -37,9 +37,9 @@
   </div>
 </section>
 
-<section class="homeCardCitation">
+<section class="homeCardCitation rounded-4 mx-5 my-4">
   <div class="homeImg">
-    <img src="asset/img/arbre.jpg" alt="" class="img-fluid">
+    <img src="asset/img/tree2.jpg" alt="" class="img-fluid">
   </div>
   <div>
     <h2 class="homeCardSentence">Mouvements somatiques<br><br>
@@ -48,4 +48,18 @@
     </h2>
   </div>
 </section>
+{% endblock %}
+{% block javascript %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll('.homeCardCitation');
+
+  sections.forEach(section => {
+    // Générer des valeurs HSL pastel
+    const hue = Math.floor(Math.random() * 360);
+    const pastel = `hsl(${hue}, 70%, 85%)`;
+    section.style.backgroundColor = pastel;
+  });
+});
+</script>
 {% endblock %}
