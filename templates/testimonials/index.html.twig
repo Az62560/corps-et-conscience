@@ -3,7 +3,7 @@
 {% block title %}Témoignages{% endblock %}
 
 {% block main %}
-<section class="bg-light rounded-4 m-5 p-5">
+<section class="testimonialCard m-5 p-5">
     <div>
         <h3 class="testimonialName">Nadine L.</h3>
         <p class="testimonialText">"J’ai rencontré Marjorie en 2021 lors de cours de yoga proposés dans une association. En quelques semaines, j’ai découvert une souplesse 
@@ -23,7 +23,7 @@
     </div>
 </section>
 
-<section class="bg-light rounded-4 m-5 p-5">
+<section class="testimonialCard m-5 p-5">
     <div>
         <h3 class="testimonialName">Jean-Yves M, 58 ans.</h3>
         <p class="testimonialText">"Cadre commercial depuis de nombreuses années, je pensais que ma vie était plutôt réussie. Puis, sont arrivés 
@@ -42,7 +42,7 @@
     </div>
 </section>
 
-<section class="bg-light rounded-4 m-5 p-5">
+<section class="testimonialCard m-5 p-5">
     <div>
         <h3 class="testimonialName">Nicolas D, 24 ans.</h3>
         <p class="testimonialText">"J'ai commencé mes séances avec Marjorie dans le cadre d'un traitement d'une dépression. Une rencontre par hasard, 
@@ -63,7 +63,7 @@
     </div>
 </section>
 
-<section class="bg-light rounded-4 m-5 p-5">
+<section class="testimonialCard m-5 p-5">
     <div>
         <h3 class="testimonialName">Xavière L.</h3>
         <p class="testimonialText">"J’ai eu l’occasion de suivre des séances de yoga, de méditation de pleine conscience et de mouvements somatiques 
@@ -83,7 +83,7 @@
     </div>
 </section>
 
-<section class="bg-light rounded-4 m-5 p-5">
+<section class="testimonialCard m-5 p-5">
     <div>
         <h3 class="testimonialName">Julie A.</h3>
         <p class="testimonialText">"J’ai eu la grande chance de pouvoir suivre les enseignements de Marjorie, pendant une longue période et dans 
@@ -104,4 +104,25 @@
         </p>
     </div>
 </section>
+<section class="testimonialCard m-5 p-5">
+    <p class="testimonialText text-center">Il ne tient qu'à vous d'écrire le prochain témoignage...</p>
+</section>
+<div>
+<hr>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll('.testimonialCard');
+
+  sections.forEach(section => {
+    // Générer des valeurs HSL pastel
+    const hue = Math.floor(Math.random() * 360);
+    const pastel = `hsl(${hue}, 70%, 85%)`;
+    section.style.backgroundColor = pastel;
+  });
+});
+</script>
 {% endblock %}
