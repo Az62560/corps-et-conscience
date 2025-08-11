@@ -111,18 +111,3 @@
 <hr>
 </div>
 {% endblock %}
-
-{% block javascript %}
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const sections = document.querySelectorAll('.testimonialCard');
-
-  sections.forEach(section => {
-    // Générer des valeurs HSL pastel
-    const hue = Math.floor(Math.random() * 360);
-    const pastel = `hsl(${hue}, 70%, 85%)`;
-    section.style.backgroundColor = pastel;
-  });
-});
-</script>
-{% endblock %}

@@ -5,62 +5,42 @@
 {% block main %}
 <section class="p-5 pt-0">
   <div class="container home-center-container">
-      <h2 class="homeSentence">"S'accorder du temps pour<br>
-      mieux vivre avec soi même<br>
-      et avec le monde qui<br>
-      nous entoure."</h2>
+      <h2 class="homeSentence">"Prendre un temps pour<br>réécrire l'histoire que raconte<br>notre corps et cultiver<br>une paix intérieure"</h2>
   </div>
 </section>
 
 <section class="homeCardCitation mx-5 my-4">
   <div class="homeImg">
-    <img src="asset/img/tournesols_pied_h.jpg" alt="" class="img-cover">
+    <img src="asset/img/tournesols_pied_h.jpg" alt="image de pied dépassant d'un champ de tournesol" class="img-cover">
   </div>
   <div>
-    <h2 class="homeCardSentence">Yoga<br><br>
-    "Le succès du yoga ne réside pas dans notre habileté à performer des postures, mais comment il change notre façon de vivre notre vie et nos 
+    <h2 class="homeCardSentence"><em>Yoga</em></h2><br><br>
+    <em>"Le succès du yoga ne réside pas dans notre habileté à performer des postures, mais comment il change notre façon de vivre notre vie et nos 
     relations."<br><br>
-      <span class="author">T.K.V.Desikachar </span>
-    </h2>
+      <span class="author">T.K.V.Desikachar </span></em>
+    
   </div>
 </section>
 
 <section class="homeCardCitation mx-5 my-4">
   <div>
-    <h2 class="homeCardSentence ps-5">Pleine conscience<br><br>
-    "Une prise de conscience est comme un soleil, lorsqu'il brille sur les choses, elles sont transformées."<br><br>
-      <span class="author">Thich Nhat Hanh</span>
-    </h2>
+    <h2 class="homeCardSentence ps-5"><em>Pleine conscience</em></h2><br><br>
+    <em>"Une prise de conscience est comme un soleil, lorsqu'il brille sur les choses, elles sont transformées."<br><br>
+      <span class="author">Thich Nhat Hanh</span></em>
   </div>
   <div class="homeImg">
-    <img src="asset/img/pissenlit.jpg" alt="" class="img-cover">
+    <img src="asset/img/pissenlit.jpg" alt="un pissenlit" class="img-cover">
   </div>
 </section>
 
 <section class="homeCardCitation mx-5 my-4">
   <div class="homeImg">
-    <img src="asset/img/tree2.jpg" alt="" class="img-cover">
+    <img src="asset/img/tree2.jpg" alt="feuillage d'arbre" class="img-cover">
   </div>
   <div>
-    <h2 class="homeCardSentence">Mouvements somatiques<br><br>
-    "Le corps humain n'est pas un instrument à utiliser, mais un domaine de son être à expérimenter, explorer, enrichir et, par conséquent, éduquer."<br><br>
-      <span class="author">Thomas Hanna</span>
-    </h2>
+    <h2 class="homeCardSentence"><em>Mouvements somatiques</em></h2><br><br>
+    <em>"Le corps humain n'est pas un instrument à utiliser, mais un domaine de son être à expérimenter, explorer, enrichir et, par conséquent, éduquer."<br><br>
+      <span class="author">Thomas Hanna</span></em>   
   </div>
 </section>
-{% endblock %}
-
-{% block javascript %}
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const sections = document.querySelectorAll('.homeCardCitation');
-
-  sections.forEach(section => {
-    // Générer des valeurs HSL pastel
-    const hue = Math.floor(Math.random() * 360);
-    const pastel = `hsl(${hue}, 70%, 85%)`;
-    section.style.backgroundColor = pastel;
-  });
-});
-</script>
 {% endblock %}
