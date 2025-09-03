@@ -39,25 +39,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-2">
-                    <a class="nav-link fs-4" href="/mes-pratiques" alt="lien vers mes pratiques"><strong>Mes pratiques</strong></a>
+                    <a class="nav-link" href="/mes-pratiques" alt="lien vers mes pratiques"><strong>Mes pratiques</strong></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link fs-4" href="/accompagnement" alt="lien vers accompagnement"><strong>Accompagnement</strong></a>
+                    <a class="nav-link" href="/accompagnement" alt="lien vers accompagnement"><strong>Accompagnement</strong></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link fs-4" href="/déontologie" alt="lien vers déontologie"><strong>Déontologie</strong></a>
+                    <a class="nav-link" href="/déontologie" alt="lien vers déontologie"><strong>Déontologie</strong></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link fs-4" href="/séances" alt="lien vers séances"><strong>Séances</strong></a>
+                    <a class="nav-link" href="/séances" alt="lien vers séances"><strong>Séances</strong></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link fs-4" href="/qui-suis-je" alt="lien vers qui suis-je"><strong>Qui suis-je ?</strong></a>
+                    <a class="nav-link" href="/qui-suis-je" alt="lien vers qui suis-je"><strong>Qui suis-je ?</strong></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link fs-4" href="/témoignages" alt="lien vers les témoignages"><strong>Témoignages</strong></a>
+                    <a class="nav-link" href="/témoignages" alt="lien vers les témoignages"><strong>Témoignages</strong></a>
                 </li>
                 <li class="nav-item mx-2 pe-3">
-                    <a class="nav-link fs-4" href="/contact"><strong>Contact</strong></a>
+                    <a class="nav-link" href="/contact"><strong>Contact</strong></a>
                 </li>
             </ul>
         </div>
@@ -67,5 +67,33 @@
         {% block main %}
         {% endblock %}
     </main>
+<footer class="footer text-white py-3" style="
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1030;">
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center container">
+    
+    <!-- Copyright -->
+    <div class="mb-2 mb-md-0 d-flex align-items-center">
+      <span class="me-2">Copyright &copy;</span>
+      <span id="currentYear"></span>
+    </div>
+
+    <!-- Mentions légales -->
+    <div class="mb-2 mb-md-0">
+      <a href="/mentions-légales" class="text-white text-decoration-none">Mentions légales</a>
+    </div>
+
+    <!-- Powered by -->
+    <div>
+      <a href="https://justin-cornu.fr/" class="text-white text-decoration-none" target="_blank" rel="noopener noreferrer">Powered by <strong>Justin CORNU</strong></a>
+    </div>
+  </div>
+</footer>
 </body>
+<script>
+  // Génère automatiquement l'année actuelle
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
 </html>

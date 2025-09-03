@@ -3,8 +3,9 @@
     padding: 0;
 }
 
-nav {
+#logo {
     font-family: "Dancing Script", serif;
+    padding-left: 2rem;
 }
 
 #navbarNav {
@@ -12,8 +13,18 @@ nav {
     padding-left: 10rem;
 }
 
-#logo {
-    padding-left: 2rem;
+/* Liens de la navbar */
+.navbar .nav-link {
+    font-size: 1rem; /* Taille de base : lisible mais plus discrète que fs-4 */
+    font-weight: 300; /* Plus léger pour un style doux et épuré */
+    letter-spacing: 0.5px; /* Un léger espacement pour l'élégance */
+    color: #333; /* Couleur neutre pour plus de sobriété */
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Effet au survol */
+.navbar .nav-link:hover {
+    color: #AED3EA; /* Couleur douce pour rappeler une ambiance zen */
 }
 
 main {
@@ -42,6 +53,10 @@ main {
     }
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .homeCardCitation {
     background-color: #FFEDE5;
     display: flex;
@@ -55,8 +70,8 @@ main {
 
 .homeImg {
     width: 100%;
-    max-width: 400px; /* Ajuste selon ton design */
-    height: 400px; /* Hauteur souhaitée */
+    max-width: 500px; /* Ajuste selon ton design */
+    height: 500px; /* Hauteur souhaitée */
     overflow: hidden;
     position: relative;
     margin: auto; /* Pour centrer */
@@ -112,6 +127,10 @@ main {
 
 }
 
+.btn-custom-radius {
+    border-radius: 15px 250px 15px 250px !important;
+}
+
 .testimonialCard{
     border-radius: 15px 250px 15px 250px;
     background-color: #FFEDE5;  
@@ -131,6 +150,13 @@ h3 {
     display: flex;
     justify-content: center;
     padding: 3rem 0 2rem 0 ;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 1220px) {
