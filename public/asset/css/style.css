@@ -15,16 +15,21 @@
 
 /* Liens de la navbar */
 .navbar .nav-link {
-    font-size: 1rem; /* Taille de base : lisible mais plus discrète que fs-4 */
-    font-weight: 300; /* Plus léger pour un style doux et épuré */
-    letter-spacing: 0.5px; /* Un léger espacement pour l'élégance */
-    color: #333; /* Couleur neutre pour plus de sobriété */
+    font-size: 1rem;
+    /* Taille de base : lisible mais plus discrète que fs-4 */
+    font-weight: 300;
+    /* Plus léger pour un style doux et épuré */
+    letter-spacing: 0.5px;
+    /* Un léger espacement pour l'élégance */
+    color: #333;
+    /* Couleur neutre pour plus de sobriété */
     transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 /* Effet au survol */
 .navbar .nav-link:hover {
-    color: #AED3EA; /* Couleur douce pour rappeler une ambiance zen */
+    color: #AED3EA;
+    /* Couleur douce pour rappeler une ambiance zen */
 }
 
 main {
@@ -38,7 +43,7 @@ main {
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-  }
+}
 
 .homeSentence {
     font-family: "Dancing Script", serif;
@@ -70,31 +75,40 @@ main {
 
 .homeImg {
     width: 100%;
-    max-width: 500px; /* Ajuste selon ton design */
-    height: 500px; /* Hauteur souhaitée */
+    max-width: 500px;
+    /* Ajuste selon ton design */
+    height: 500px;
+    /* Hauteur souhaitée */
     overflow: hidden;
     position: relative;
-    margin: auto; /* Pour centrer */
+    margin: auto;
+    /* Pour centrer */
     transition: transform 0.6s ease;
-  }
+}
 
 .homeImg:hover {
-  transform: scaleX(-1); /* flip horizontal */
+    transform: scaleX(-1);
+    /* flip horizontal */
 }
 
 .img-cover {
     height: 100%;
-    width: 100%; /* Remplit la largeur du conteneur */
-    object-fit: cover; /* Ajuste l'image pour remplir le conteneur */
+    width: 100%;
+    /* Remplit la largeur du conteneur */
+    object-fit: cover;
+    /* Ajuste l'image pour remplir le conteneur */
     border-radius: 15px 250px 15px 250px;
 }
 
 .home-center-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrer les éléments horizontalement */
-    text-align: center; /* Centrer le texte */
-    gap: 10px; /* Espacement entre le texte et l'image */
+    align-items: center;
+    /* Centrer les éléments horizontalement */
+    text-align: center;
+    /* Centrer le texte */
+    gap: 10px;
+    /* Espacement entre le texte et l'image */
 }
 
 #practitalsTitle {
@@ -113,7 +127,7 @@ main {
     background-color: #FFEDE5;
 }
 
-.whoAmICard{
+.whoAmICard {
     background-color: #FFEDE5;
     border-radius: 15px 250px 15px 250px;
 }
@@ -131,9 +145,9 @@ main {
     border-radius: 15px 250px 15px 250px !important;
 }
 
-.testimonialCard{
+.testimonialCard {
     border-radius: 15px 250px 15px 250px;
-    background-color: #FFEDE5;  
+    background-color: #FFEDE5;
 }
 
 .img-practice {
@@ -142,14 +156,15 @@ main {
 }
 
 .img-practice:hover {
-  transform: scaleX(-1); /* flip horizontal */
-  /* transform: scaleY(-1); Retour vertical */
+    transform: scaleX(-1);
+    /* flip horizontal */
+    /* transform: scaleY(-1); Retour vertical */
 }
 
 h3 {
     display: flex;
     justify-content: center;
-    padding: 3rem 0 2rem 0 ;
+    padding: 3rem 0 2rem 0;
 }
 
 @media (max-width: 768px) {
@@ -164,7 +179,7 @@ h3 {
         flex-direction: column;
     }
 
-    #container-fluid-inverse{
+    #container-fluid-inverse {
         flex-direction: column-reverse;
     }
 
